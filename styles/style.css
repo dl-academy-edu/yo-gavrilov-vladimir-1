@@ -1,0 +1,239 @@
+
+*, 
+*::before, 
+*::after { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: inherit; 
+}
+
+.container{
+    max-width: 1178px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 129px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header > a:hover{
+    opacity: 50%;
+}
+
+.header > a:active{
+    opacity: 20%;
+}
+
+.header > a:visited{
+    color: black;
+}
+
+.header__nav-list{
+    display: flex;
+    font-size: 14px;
+    line-height: 19px;
+    margin-left: 50px;
+}
+
+.header__row-list{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-left: 660px;
+}
+
+.header__nav-item{
+    margin: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    list-style-type: none;
+    color: #1E0606;
+    white-space: nowrap;
+}
+
+.header__row-item{
+    margin: 11px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    list-style-type: none;
+    color: #1E0606;
+    white-space: nowrap;
+}
+
+.header__nav-item > a:visited, .header__row-item > a:visited, .header__row-item > img:visited{
+    color:#1E0606
+}
+
+.header__nav-item > a:hover, .header__row-item > a:hover, .header__row-item > img:hover{
+    opacity: 50%;
+}
+
+.header__nav-item > a:active, .header__row-item > a:active, .header__row-item > img:active {
+    opacity: 20%;
+}
+
+.header__nav-item > a, .header__row-item > a{
+    text-decoration: none;
+}
+
+.banner{
+    position: relative;
+    display: flex;
+    max-width: 1178px;
+    height: 411px;
+    margin: auto;
+    background-color: #EEE4DB;
+}
+
+.banner__img{
+    position: absolute;
+    height: 461px;
+    bottom: 38px;
+    left: 315px;
+}
+
+.banner__slider-list{
+    margin-left: 31px;
+    margin-top: 10px;
+    list-style: none;
+    outline: none;
+    border-width: none;
+}
+
+.banner__slider-item > button:focus{
+    background-color: #725F5B;
+}
+
+.banner__slider-item > button{
+    background-color: #D6CAC2;
+    border: 0;
+    width: 31px;
+    height: 3px;
+}
+
+.banner__content{
+    margin-left: 44px;
+    margin-top: 65px;
+    position: relative;
+}
+
+.banner__content-list{
+    list-style: none;
+}
+
+.banner__slider-btn:hover{
+    background-color: #1E060699;
+}
+
+.banner__content-item{
+    margin-top: 20px;
+}
+
+.banner__content-title{
+    width: 307px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner__text{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Crimson Text', serif;
+    line-height: 26px;
+}
+
+.banner__additionalInfo{
+    position: absolute;
+    top: 373px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding: 11px 392px;
+    background-color: #C29974;
+}
+
+.banner__content-item > button{
+    padding: 9px 22px;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    border: 0;
+}
+
+.banner__slider-number{
+    position: relative;
+    top: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    color: #1E0606;
+    opacity: 5%;
+    margin-left: 28px;
+}
+
+.banner__slider{
+    margin-top: 17px;
+}
+
+.footer__raiting {
+    position: relative;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.footer__raiting::before{
+    content: "★★★★★";
+    display: block;
+}
+
+.footer__raiting-items{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+
+.footer__input{
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+}
+
+.footer__label{
+    flex: 0 0 20%;
+    height: 100%;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.footer__label::before{
+    content: "★";
+    display: block;
+    transition: color 0.3s ease 0s;
+}
+
+.footer__input:checked,
+.footer__input:checked ~ .footer__label{
+    color: #C29974;
+}
+
+.footer__label:hover,
+.footer__label:hover ~ .footer__label,
+.footer__label:checked ~ .footer__label:hover {
+    color: #836E5B;
+}
+
+
