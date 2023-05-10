@@ -124,20 +124,23 @@
             <ul class="filter__list amount__list">
                 <li class="filter__item-amount amount__item">
                     <label class="filter__label amount__label" for="0-5">
-                        <input class="filter__input amount__input" type="radio" id="0-5">
-                        0-5
+                        <input class="filter__input amount__input" type="radio" id="0-5" name="b">
+                        <span class="filter__span amount"></span>
+                        <p class="filter__descriptoin-text amount__description">0-5</p>
                     </label>
                 </li>
                 <li class="filter__item-amount amount__item">
                     <label class="filter__label amount__label" for="10-20">
-                        <input class="filter__input amount__input" type="radio" id="10-20">
-                        10-20
+                        <input class="filter__input amount__input" type="radio" id="10-20" name="b">
+                        <span class="filter__span amount"></span>
+                        <p class="filter__descriptoin-text amount__description">10-20</p>
                     </label>
                 </li>
                 <li class="filter__item-amount amount__item">
                     <label class="filter__label amount__label" for="20-50">
-                        <input class="filter__input amount__input" type="radio" id="20-50">
-                        20-50
+                        <input class="filter__input amount__input" type="radio" id="20-50" name="b">
+                        <span class="filter__span amount"></span>
+                        <p class="filter__descriptoin-text amount__description">20-50</p>
                     </label>
                 </li>
             </ul>
@@ -149,17 +152,15 @@
     <section class="catalog">
         <ul class="catalog__list">
             <li class="catalog__item">
-                <div class="catalog__container">
-                    <img class="catalog__img" src="../images/toys/Sharky.png" alt="product image">
-                    <a class="catalog__link" href="#">Learn more</a>
-                    <p class="catalog__description">SHARKY BEAN BAG CHAIR COVER</p>
-                    <p class="catalog__price">$60.00 USD</p>
-                </div>
+                <img class="catalog__img" src="../images/toys/Sharky.png" alt="product image">
+                <a class="catalog__link catalog__product-link" href="#">Learn more</a>
+                <p class="catalog__description">SHARKY BEAN BAG CHAIR COVER</p>
+                <p class="catalog__price">$60.00 USD</p>
             </li>
             <li class="catalog__item">
                 <div class="catalog__container">
                     <img class="catalog__img" src="../images/toys/Brass.png" alt="product image">
-                    <a class="catalog__link" href="#">Learn more</a>
+                    <a class="catalog__link catalog__product-link" href="#">Learn more</a>
                     <p class="catalog__description">BRASS DECO FRAMES</p>
                     <p class="catalog__price">$66.00 USD</p>
                 </div>
@@ -167,7 +168,7 @@
             <li class="catalog__item">
                 <div class="catalog__container">
                     <img class="catalog__img" src="../images/toys/Cibo.png" alt="product image">
-                    <a class="catalog__link" href="#">Learn more</a>
+                    <a class="catalog__link catalog__product-link" href="#">Learn more</a>
                     <p class="catalog__description">CIBO FULL APRON</p>
                     <p class="catalog__price">$60.00 USD</p>
                 </div>
@@ -175,7 +176,7 @@
             <li class="catalog__item">
                 <div class="catalog__container">
                     <img class="catalog__img" src="../images/toys/Gatcha.png" alt="product image">
-                    <a class="catalog__link" href="#">Learn more</a>
+                    <a class="catalog__link catalog__product-link" href="#">Learn more</a>
                     <p class="catalog__description">GATCHA GATCHA GUMBALL MACHINE</p>
                     <p class="catalog__price">$56.00 USD</p>
                 </div>
@@ -183,7 +184,7 @@
             <li class="catalog__item">
                 <div class="catalog__container">
                     <img class="catalog__img" src="../images/toys/Christmass.png" alt="product image">
-                    <a class="catalog__link" href="#">Learn more</a>
+                    <a class="catalog__link catalog__product-link" href="#">Learn more</a>
                     <p class="catalog__description">CHRISTMAS ADVENT SCENTED CANDLE</p>
                     <p class="catalog__price">$29.00 USD</p>
                 </div>
@@ -191,29 +192,29 @@
             <li class="catalog__item">
                 <div class="catalog__container">
                     <img class="catalog__img" src="../images/toys/Tangle.png" alt="product image">
-                    <a class="catalog__link" href="#">Learn more</a>
+                    <a class="catalog__link catalog__product-link" href="#">Learn more</a>
                     <p class="catalog__description">TANGLE SPINNING TEA LIGHT</p>
                     <p class="catalog__price">$56.00 USD</p>
                 </div>
             </li>
         </ul>
         <div class="catalog__pages"> <!--pages links-->
-            <ol class="catalog__list">
-                <li class="catalog__item">
-                    <a class="catalog__link" href="#">1</a>
+            <a href="#" class="catalog__arrow catalog__arrowleft"></a> <!--need to add arrows in css-->
+            <ol class="catalog__pages-list">
+                <li class="catalog__pages-item">
+                    <a class="catalog__pages-link" href="#">1</a>
                 </li>
-                <li class="catalog__item">
-                    <a class="catalog__link" href="#">2</a>
+                <li class="catalog__pages-item">
+                    <a class="catalog__pages-link" href="#">2</a>
                 </li>
-                <li class="catalog__item">
-                    <a class="catalog__link" href="#">3</a>
+                <li class="catalog__pages-item">
+                    <a class="catalog__pages-link" href="#">3</a>
                 </li>
-                <li class="catalog__item">
-                    <a class="catalog__link" href="#">4</a>
+                <li class="catalog__pages-item">
+                    <a class="catalog__pages-link" href="#">4</a>
                 </li>
             </ol>
-            <a href="#" class="catalog__link"></a> <!--need to add arrows in css-->
-            <a href="#" class="catalog__link"></a> <!--need to add arrows in css-->
+            <a href="#" class="catalog__arrow catalog__arrowRight"></a> <!--need to add arrows in css-->
         </div>
     </section>
     <footer class="footer">
