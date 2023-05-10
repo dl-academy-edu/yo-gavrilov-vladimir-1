@@ -679,6 +679,14 @@
     color: #ffffff;
 }
 
+.footer__connect-form-btn:hover {
+    background-color: #C29974;
+}
+
+.footer__connect-form-btn:active {
+    background-color: #CFAF91;
+}
+
 .footer__connect-form>input::placeholder {
     color: #ffffff;
 }
