@@ -54,12 +54,9 @@
     </div>
     <form class="filter">
         <div class="filter__range">
-            <p class="filter__text">Cost</p>
-            <span class="bar">
-                <span class="fill"></span>
-            </span>
-            <input class="filter__input filter__input-range" type="range" min="0" max="500" step="10" value="100"
-                name="" id="slider">
+            <p class="filter__text filter__cost-text">Cost</p>
+            <input class="styled-slider slider-progress" type="range" min="0" max="500" step="10" value="100" name=""
+                id="slider">
             <div class="filter__value-container">
                 <span class="filter__value-left">0</span>
                 <span class="filter__value-right">500</span>
@@ -299,17 +296,7 @@
             </div>
         </div>
     </footer>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="/js/script.js"></script>
-    <script>
-        var $slider = $("#slider");
-        var $fill = $(".bar .fill");
-        Function setbar() {
-            $fill.css("width", $slider.val() + "%")
-        }
-        $slider.on("input", setbar);
-        setbar();
-    </script> -->
+    <script src="../js/range-input.js"></script>
 </body>
 
 </html>

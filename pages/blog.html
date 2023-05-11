@@ -5,26 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/common.css">
+    <title>Toys</title>
+    <link rel="stylesheet" href="/styles/blog.css">
+    <link rel="stylesheet" href="/styles/common.css">
+    <link rel="stylesheet" href="./styles/normolize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header class="header container">
-        <a href="/" class="header__link">
-            <img src="../images/Union.png" alt="logotype of DLK shop" class="header__img" width="100" height="52">
-        </a>
-        <nav class="header__nav">
-            <ul class="header__nav-list">
-                <li class="header__nav-item"><a href="#" class="header__nav-link">BLOG</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">CATALOG</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">ABOUT US</a></li>
-            </ul>
-        </nav>
+        <div class="header__leftblock">
+            <a href="/" class="header__link-index"></a>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="/pages/blog.html" class="header__nav-link">BLOG</a></li>
+                    <li class="header__nav-item"><a href="/pages/catalog.html" class="header__nav-link">CATALOG</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">ABOUT US</a></li>
+                </ul>
+            </nav>
+        </div>
         <ul class="header__row-list">
-            <li class="header__row-item">
-                <!-- <input class="header__row-input" type="search" size="10" > --> <!--добавить потом-->
-                <img class="header__row-img" src="../images/Search.png" alt="search icon">
+            <li class="header__row-item header__search-icon">
+                <span class="header__search-hide">
+                    <form class="header__searchform" action="">
+                        <input class="header__row-input" type="search" size="10">
+                        <!-- <img class="header__row-img" src="" alt="search icon"> -->
+                    </form>
+                </span>
             </li>
             <li class="header__row-item"><a class="header__link" href="#">CONTACT US</a></li>
         </ul>
@@ -33,149 +46,167 @@
         <h1 class="nav__title">Blog</h1>
         <nav class="nav__crumbs">
             <ol class="nav__list">
-                <li class="nav__item"><a class="nav_link" href="../index.html">Home</a></li>
-                <li class="nav__item">Blog</li>
+                <li class="nav__item"><a class="nav__link" href="../index.html">Home</a></li>
+                <li class="nav__item current">Blog</li>
             </ol>
         </nav>
     </div>
     <section class="articles">
         <ul class="articles__list">
             <li class="articles__item">
-                <img src="" alt="article image">
-                <p>23rd August 2018</p>
-                <h2>Top 5 fastest growing it service companies in philly</h2>
-                <p>Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p>
+                <img class="articles__image" src="../images/blog/lego.jpg" alt="article image">
+                <p class="articles__date">23rd August 2018</p>
+                <h2 class="articles__title">Top 5 fastest growing it service companies in philly</h2>
+                <p class="articles__descripton">Direct Line Development’s Team is excited to announce that we received
+                    UpCity’s 2019 Local Excellence
+                    Award! This prestigious award is annually presented to the Top 1% of service providers in the given
+                    marketplace.</p>
             </li>
             <li class="articles__item">
-                <img src="" alt="article image">
-                <p>23rd August 2018</p>
-                <h2>Best financial</h2>
-                <p>Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
+                <img class="articles__image" src="../images/blog/unicorn.jpg" alt="article image">
+                <p class="articles__date">23rd August 2018</p>
+                <h2 class="articles__title">Best financial</h2>
+                <p class="articles__descripton">Direct Line Development is honored to be recognized as one of the Top
+                    100 Fastest Growing Companies
+                    2019 in Philadelphia, according to Growjo’s ranking.</p>
             </li>
             <li class="articles__item">
-                <img src="" alt="article image">
-                <p>23rd August 2018</p>
-                <h2>Company logo or brand identity: which one is more important? brand identity</h2>
-                <p>To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
+                <img class="articles__image" src="../images/blog/blocks.jpg" alt="article image">
+                <p class="articles__date">23rd August 2018</p>
+                <h2 class="articles__title">Company logo or brand identity: which one is more important? brand identity
+                </h2>
+                <p class="articles__descripton">To survive in the world of digital marketing, you need to keep up with
+                    the latest SEO trends. Here
+                    are our simple, but effective, SEO tips for small business success.</p>
             </li>
             <li class="articles__item">
-                <img src="" alt="article image">
-                <p>23rd August 2018</p>
-                <h2>Best financial</h2>
-                <p>Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
+                <img class="articles__image" src="../images/blog/captan.jpg" alt="article image">
+                <p class="articles__date">23rd August 2018</p>
+                <h2 class="articles__title">Best financial</h2>
+                <p class="articles__descripton">Direct Line Development is honored to be recognized as one of the Top
+                    100 Fastest Growing Companies
+                    2019 in Philadelphia, according to Growjo’s ranking.</p>
             </li>
             <li class="articles__item">
-                <img src="" alt="article image">
-                <p>23rd August 2018</p>
-                <h2>Company logo or brand identity: which one is more important? brand identity</h2>
-                <p>To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
+                <img class="articles__image" src="../images/blog/doll.jpg" alt="article image">
+                <p class="articles__date">23rd August 2018</p>
+                <h2 class="articles__title">Company logo or brand identity: which one is more important? brand identity
+                </h2>
+                <p class="articles__descripton">To survive in the world of digital marketing, you need to keep up with
+                    the latest SEO trends. Here
+                    are our simple, but effective, SEO tips for small business success.</p>
             </li>
             <li class="articles__item">
-                <img src="" alt="article image">
-                <p>23rd August 2018</p>
-                <h2>Top 5 fastest growing it service companies in philly</h2>
-                <p>Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p>
+                <img class="articles__image" src="../images/blog/dice.jpg" alt="article image">
+                <p class="articles__date">23rd August 2018</p>
+                <h2 class="articles__title">Top 5 fastest growing it service companies in philly</h2>
+                <p class="articles__descripton">Direct Line Development’s Team is excited to announce that we received
+                    UpCity’s 2019 Local Excellence
+                    Award! This prestigious award is annually presented to the Top 1% of service providers in the given
+                    marketplace.</p>
             </li>
         </ul>
-        <div class="articles__pages"> <!--pages links-->
-            <ol class="articles__list">
-                <li class="articles__item">
-                    <a class="articles__link" href="#">1</a>
+        <div class="catalog__pages"> <!--pages links-->
+            <a href="#" class="catalog__arrow catalog__arrowleft"></a> <!--need to add arrows in css-->
+            <ol class="catalog__pages-list">
+                <li class="catalog__pages-item">
+                    <a class="catalog__pages-link" href="#">1</a>
                 </li>
-                <li class="articles__item">
-                    <a class="articles__link" href="#">2</a>
+                <li class="catalog__pages-item">
+                    <a class="catalog__pages-link" href="#">2</a>
                 </li>
-                <li class="articles__item">
-                    <a class="articles__link" href="#">3</a>
+                <li class="catalog__pages-item">
+                    <a class="catalog__pages-link" href="#">3</a>
                 </li>
-                <li class="articles__item">
-                    <a class="articles__link" href="#">4</a>
+                <li class="catalog__pages-item">
+                    <a class="catalog__pages-link" href="#">4</a>
                 </li>
             </ol>
-            <a href="#" class="articles__link"></a> <!--need to add arrows in css-->
-            <a href="#" class="articles__link"></a> <!--need to add arrows in css-->
+            <a href="#" class="catalog__arrow catalog__arrowRight"></a> <!--need to add arrows in css-->
         </div>
     </section>
     <footer class="footer">
-        <div class="footer__navigation">
-            <p class="footer__navigation-text">Navigation</p>
-            <nav class="footer__navigation-col">
-                <ul class="footer__col-list">
-                    <li class="footer__col-item"><a class="footer__navigation-link" href="#">About Us</a></li>
-                    <li class="footer__col-item"><a class="footer__navigation-link" href="#">Blog</a></li>
-                    <li class="footer__col-item"><a class="footer__navigation-link" href="#">Design Services</a></li>
-                    <li class="footer__col-item"><a class="footer__navigation-link" href="#">Featured On</a></li>
-                    <li class="footer__col-item"><a class="footer__navigation-link" href="#">2018 Holiday Catalog</a>
-                    </li>
-                    <li class="footer__col-item"><a class="footer__navigation-link" href="#">Shop By Designer</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="footer__info">
-            <p class="footer__info-text">Customer Information</p>
-            <ul class="footer__info-list">
-                <li class="footer__info-item"><a class="footer__info-link" href="#">Contact Us</a></li>
-                <li class="footer__info-item"><a class="footer__info-link" href="#">Sale Exclusions</a></li>
-                <li class="footer__info-item"><a class="footer__info-link" href="#">Shipping & Returns</a></li>
-                <li class="footer__info-item"><a class="footer__info-link" href="#">Terms & Conditions</a></li>
-                <li class="footer__info-item"><a class="footer__info-link" href="#">Privacy Policy</a></li>
-                <li class="footer__info-item"><a class="footer__info-link" href="#">Search</a></li>
-            </ul>
-        </div>
-        <div class="footer__connect">
-            <p class="footer__connect-text">Connect</p>
-            <form class="footer__connect-form" action="#" method="get">
-                <input class="footer__connect-form-input" type="email" name="email" id="email" required>
-                <button class="footer__connect-form-btn" type="submit">JOIN</button>
-            </form>
-            <div class="footer__socials">
-                <ul class="footer__socials-list">
-                    <li class="footer__item">
-                        <a class="footer__link" href="#">
-                            <img class="footer__socials-list-item-img" src="../images/social/Facebook.png"
-                                alt="facebook icon">
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a class="footer__link" href="#">
-                            <img class="footer__socials-list-item-img" src="../images/social/Twitter.png"
-                                alt="Twitter icon">
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a class="footer__link" href="#">
-                            <img class="footer__socials-list-item-img" src="../images/social/Pinterest.png"
-                                alt="Pinterest icon">
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a class="footer__link" href="#">
-                            <img class="footer__socials-list-item-img" src="../images/social/Instagram.png"
-                                alt="Instagram icon">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer__row">
-            <p class="footer__text">Company Rating</p>
-            <div class="footer__raiting">
-                <div class="footer__raiting-items">
-                    <input class="footer__input" type="radio" name="rate" id="rate-5">
-                    <label class="footer__label" for="rate-5"></label>
-                    <input class="footer__input" type="radio" name="rate" id="rate-4">
-                    <label class="footer__label" for="rate-4"></label>
-                    <input class="footer__input" type="radio" name="rate" id="rate-3">
-                    <label class="footer__label" for="rate-3"></label>
-                    <input class="footer__input" type="radio" name="rate" id="rate-2">
-                    <label class="footer__label" for="rate-2"></label>
-                    <input class="footer__input" type="radio" name="rate" id="rate-1">
-                    <label class="footer__label" for="rate-1"></label>
+        <div class="footer__blockorder">
+            <div class="footer__top-row">
+                <div class="footer__navigation">
+                    <h2 class="footer__navigation-text">Navigation</h2>
+                    <nav class="footer__navigation-col">
+                        <ul class="footer__col-list">
+                            <li class="footer__col-item"><a class="footer__navigation-link" href="#">About Us</a></li>
+                            <li class="footer__col-item"><a class="footer__navigation-link" href="#">Blog</a></li>
+                            <li class="footer__col-item"><a class="footer__navigation-link" href="#">Design Services</a>
+                            </li>
+                            <li class="footer__col-item"><a class="footer__navigation-link" href="#">Featured On</a>
+                            </li>
+                            <li class="footer__col-item"><a class="footer__navigation-link" href="#">2018 Holiday
+                                    Catalog</a></li>
+                            <li class="footer__col-item"><a class="footer__navigation-link" href="#">Shop By
+                                    Designer</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__info">
+                    <h2 class="footer__info-text">Customer Information</h2>
+                    <ul class="footer__info-list">
+                        <li class="footer__info-item"><a class="footer__info-link" href="#">Contact Us</a></li>
+                        <li class="footer__info-item"><a class="footer__info-link" href="#">Sale Exclusions</a></li>
+                        <li class="footer__info-item"><a class="footer__info-link" href="#">Shipping & Returns</a></li>
+                        <li class="footer__info-item"><a class="footer__info-link" href="#">Terms & Conditions</a></li>
+                        <li class="footer__info-item"><a class="footer__info-link" href="#">Privacy Policy</a></li>
+                        <li class="footer__info-item"><a class="footer__info-link" href="#">Search</a></li>
+                    </ul>
+                </div>
+                <div class="footer__connect">
+                    <h2 class="footer__connect-text">Connect</h2>
+                    <form class="footer__connect-form" action="#" method="get">
+                        <input class="footer__connect-form-input" type="email" name="email" id="email"
+                            placeholder="Email" required>
+                        <button class="footer__connect-form-btn" type="submit">JOIN</button>
+                    </form>
+                    <div class="footer__socials">
+                        <ul class="footer__socials-list">
+                            <li class="footer__item">
+                                <a class="footer__link facebook" href="#"></a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link twitter" href="#"></a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link pinterest" href="#"></a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link instagram" href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <p class="foter__text">Copyright © 2018 Dlk • Design Life Kids</p>
-            <p class="foter__text"> Web Design — <a class="footer__link" href="#">Direct Line Development</a></p>
+            <div class="footer__lower-row">
+                <div class="footer__raiting-container">
+                    <p class="footer__text">Company Rating</p>
+                    <div class="footer__raiting">
+                        <div class="footer__raiting-items">
+                            <input class="footer__input" type="radio" name="rate" id="rate-5">
+                            <label class="footer__label" for="rate-5"></label>
+                            <input class="footer__input" type="radio" name="rate" id="rate-4">
+                            <label class="footer__label" for="rate-4"></label>
+                            <input class="footer__input" type="radio" name="rate" id="rate-3">
+                            <label class="footer__label" for="rate-3"></label>
+                            <input class="footer__input" type="radio" name="rate" id="rate-2">
+                            <label class="footer__label" for="rate-2"></label>
+                            <input class="footer__input" type="radio" name="rate" id="rate-1">
+                            <label class="footer__label" for="rate-1"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copiright-container">
+                    <p class="footer__text">Copyright © 2018 Dlk • Design Life Kids</p>
+                </div>
+                <a class="footer__design-link" href="#">Web Design — Direct Line Development</a>
+            </div>
         </div>
     </footer>
 </body>
+
 </html>

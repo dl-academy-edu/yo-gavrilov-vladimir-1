@@ -1,0 +1,42 @@
+.articles {
+    max-width: 1178px;
+    margin: auto;
+}
+
+.articles__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px auto 0;
+    list-style-type: none;
+}
+
+.articles__item {
+    width: 380px;
+    margin-top: 40px;
+}
+
+.articles__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    margin-top: 7px;
+}
+
+.articles__descripton {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 15px;
+}
+
+.articles__date {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #818181;
+    margin-top: 20px;
+}

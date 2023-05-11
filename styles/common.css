@@ -763,6 +763,87 @@
     list-style-type: none;
 }
 
+
+.catalog__pages {
+    width: 1174px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.catalog__pages-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+}
+
+.catalog__pages-item>a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #1E0606;
+}
+
+.catalog__arrowleft {
+    width: 20px;
+    height: 30px;
+    background-image: url(../images/arrow.svg);
+    opacity: 12%;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    background-position: center;
+}
+
+.catalog__arrowleft:hover {
+    width: 20px;
+    height: 30px;
+    background-image: url(../images/arrowhover.svg);
+    opacity: 100%;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    background-position: center;
+}
+
+.catalog__arrowleft:active {
+    width: 20px;
+    height: 30px;
+    background-image: url(../images/arrowhover.svg);
+    opacity: 70%;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    background-position: center;
+}
+
+.catalog__arrowRight {
+    width: 20px;
+    height: 30px;
+    background-image: url(../images/arrow.svg);
+    opacity: 12%;
+    background-position: center;
+}
+
+.catalog__arrowRight:hover {
+    width: 20px;
+    height: 30px;
+    background-image: url(../images/arrowhover.svg);
+    opacity: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.catalog__arrowRight:active {
+    width: 20px;
+    height: 30px;
+    background-image: url(../images/arrowhover.svg);
+    opacity: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
 /* добавил отступ всем кроме первого элемента списка ссылок */
 .footer__col-list>*+*,
 .footer__info-list>*+* {
@@ -801,8 +882,6 @@
     display: flex;
     gap: 25px;
 }
-
-
 
 .footer__copiright-container,
 .footer__text-container {
