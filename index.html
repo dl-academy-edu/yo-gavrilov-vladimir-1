@@ -6,15 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DLK</title>
-    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
-    <link rel="stylesheet" href="/styles/common.css">
-    <link rel="stylesheet" href="./styles/normolize.css">
+    <link rel="stylesheet" href="./styles/stylesmin.css">
+    <link rel="stylesheet" href="./styles/commonmin.css">
+    <link rel="stylesheet" href="./styles/modalmin.css">
+    <link rel="stylesheet" href="./styles/normilizemin.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;600;700&family=Open+Sans:wght@400;700&display=swap"
         rel="stylesheet">
 </head>
 
@@ -26,20 +27,16 @@
                 <ul class="header__nav-list">
                     <li class="header__nav-item"><a href="/pages/blog.html" class="header__nav-link">BLOG</a></li>
                     <li class="header__nav-item"><a href="/pages/catalog.html" class="header__nav-link">CATALOG</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">ABOUT US</a></li>
+                    <li class="header__nav-item"><a href="/" class="header__nav-link">ABOUT US</a></li>
                 </ul>
             </nav>
         </div>
         <ul class="header__row-list">
             <li class="header__row-item header__search-icon">
-                <span class="header__search-hide">
-                    <form class="header__searchform" action="">
-                        <input class="header__row-input" type="search" size="10">
-                        <!-- <img class="header__row-img" src="" alt="search icon"> -->
-                    </form>
-                </span>
+                <span class="header__search-hide"></span>
             </li>
-            <li class="header__row-item"><a class="header__link" href="#">CONTACT US</a></li>
+            <li class="header__row-item"><a class="header__link" href="/pages/contact-us.html">CONTACT
+                    US</a></li>
         </ul>
     </header>
     <main>
@@ -48,7 +45,8 @@
                 <p class="banner__slider-number">01</p> <!--slide nunmber-->
                 <ul class="banner__slider-list">
                     <li class="banner__slider-item">
-                        <button class="banner__slider-btn active" type="button"></button> <!--active slide button-->
+                        <button class="banner__slider-btn active" type="button"></button>
+                        <!--active slide button-->
                     </li>
                     <li class="banner__slider-item">
                         <button class="banner__slider-btn" type="button"></button> <!---passive slide button-->
@@ -62,7 +60,8 @@
                 </ul>
             </div>
             <div class="banner__content">
-                <img class="banner__img" src="./images/MainImage.png" alt="image of monster in main">
+                <img class="banner__img" src="./images/MainImage.png" width="636" height="462"
+                    alt="image of monster in main">
                 <ul class="banner__content-list">
                     <li class="banner__content-item">
                         <h1 class="banner__content-title">THE OOH NOO COLLECTION</h1>
@@ -71,7 +70,7 @@
                         <p class="banner__text">Designed in Slovenia</p>
                     </li>
                     <li class="banner__content-item">
-                        <button class="banner__btn" type="button">EXPLORE NOW</button>
+                        <button class="banner__btn modal__btn" type="button">EXPLORE NOW</button>
                     </li>
                     <!-- <li class="banner__content-item">
                         <img src="./images/MainImage.png" alt="image of monster in main" class="banner__img">
@@ -86,20 +85,24 @@
         <h2 class="slider__title">CATEGORY PRODUCTS</h2>
         <ul class="slider__list">
             <li class="slider__item slider__kids">
-                <img class="slider__img" src="./images/category/sweater.png" alt="images of apparel kids category">
-                <a class="slider__link" href="#">Apparel kids</a>
+                <img class="slider__img" src="./images/category/sweater.png" width="244" height="178"
+                    alt="images of apparel kids category">
+                <a class="slider__link slider__link-kids" href="#">Apparel kids</a>
             </li>
             <li class="slider__item slider__shop">
-                <img class="slider__img" src="./images/category/soxs.png" alt="images of holliday shop category">
+                <img class="slider__img" src="./images/category/soxs.png" width="208" height="244"
+                    alt="images of holliday shop category">
                 <a class="slider__link" href="#">Holiday shop</a>
             </li>
             <li class="slider__item slider__toys">
-                <img class="slider__img" src="./images/category/deer.png" alt="images of toys category">
-                <a class="slider__link" href="#">Toys</a>
+                <img class="slider__img slider__img-toys" src="./images/category/deer.png" width="270" height="270"
+                    alt="images of toys category">
+                <a class="slider__link slider__link-toys" href="/pages/toys.html">Toys</a>
             </li>
             <li class="slider__item slider__accesories">
-                <img class="slider__img" src="./images/category/eti.png" alt="images of accesories category">
-                <a class="slider__link" href="#">Accessories</a>
+                <img class="slider__img" src="./images/category/eti.png" width="240" height="250"
+                    alt="images of accesories category">
+                <a class="slider__link slider__link-accessories" href="#">Accessories</a>
             </li>
         </ul>
         <div class="slider__buttons">
@@ -110,7 +113,7 @@
         </div>
     </section>
     <section class="features">
-        <img class="features__img" src="./images/DeliveryImage.jpg" alt="image of a woman">
+        <img class="features__img" src="./images/DeliveryImage.jpg" width="480" height="559" alt="image of a woman">
         <ul class="features__list">
             <li class="features__item">
                 <h3 class="features__title">DELIVERY</h3>
@@ -125,33 +128,40 @@
                 <button class="features__btn features__credit" type="button">Credit</button>
             </li>
             <li class="features__item">
-                <p class="features__description">Some days i feel like i've been working on dlk my entire life and there
+                <p class="features__description features__margin">Some days i feel like i've been working on dlk my
+                    entire life and there
                     are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
             </li>
             <li class="features__item">
-                <p class="features__description features__description-margin">What started as an outlet to deal with the
+                <p class="features__description">What started as an outlet to deal with the
                     traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all
                     of the beautiful designers that we work with to thank!</p>
             </li>
-            <li class="features__item">
-                <a class="features__link" href="#">LAERN MORE</a>
+            <li class="features__item features__item-link">
+                <a class="features__link" href="#">LEARN MORE</a>
             </li>
         </ul>
     </section>
     <section class="sponsors">
+        <h2 class="sponsors__title">Partners</h2>
         <ul class="sponsors__list">
-            <li class="sponsors__item"><img src="./images/sponsors/Mail.png" alt="logo of mail" class="sponsors__img">
+            <li class="sponsors__item"><img class="sponsors__img" src="./images/sponsors/Mail.png" width="193"
+                    height="60" alt="logo of mail">
             </li>
-            <li class="sponsors__item"><img src="./images/sponsors/Apple.png" alt="logo of apple" class="sponsors__img">
+            <li class="sponsors__item"><img class="sponsors__img" src="./images/sponsors/Apple.png" width="179"
+                    height="61" alt="logo of apple">
             </li>
-            <li class="sponsors__item"><img src="./images/sponsors/Eltex.png" alt="logo of eltex" class="sponsors__img">
+            <li class="sponsors__item"><img class="sponsors__img" src="./images/sponsors/Eltex.png" width="216"
+                    height="46" alt="logo of eltex">
             </li>
-            <li class="sponsors__item"><img src="./images/sponsors/Owox.png" alt="logo of owox" class="sponsors__img">
+            <li class="sponsors__item"><img class="sponsors__img" src="./images/sponsors/Owox.png" width="211"
+                    height="40" alt="logo of owox">
             </li>
         </ul>
     </section>
     <section class="info">
-        <article class="info__aboutus">
+        <h2 class="info__title-hidden">About Us</h2>
+        <article class="info__aboutUs">
             <h2 class="info__title">DESIGN LIFE KIDS</h2>
             <p class="info__subtitle">About Us</p>
             <p class="info__text info__aboutUs-text">Some days i feel like i've been working on dlk my entire life and
@@ -177,8 +187,10 @@
                     <h2 class="footer__navigation-text">Navigation</h2>
                     <nav class="footer__navigation-col">
                         <ul class="footer__col-list">
-                            <li class="footer__col-item"><a class="footer__navigation-link" href="#">About Us</a></li>
-                            <li class="footer__col-item"><a class="footer__navigation-link" href="#">Blog</a></li>
+                            <li class="footer__col-item"><a class="footer__navigation-link" href="/index.html">About
+                                    Us</a></li>
+                            <li class="footer__col-item"><a class="footer__navigation-link"
+                                    href="/pages/blog.html">Blog</a></li>
                             <li class="footer__col-item"><a class="footer__navigation-link" href="#">Design Services</a>
                             </li>
                             <li class="footer__col-item"><a class="footer__navigation-link" href="#">Featured On</a>
@@ -194,7 +206,8 @@
                 <div class="footer__info">
                     <h2 class="footer__info-text">Customer Information</h2>
                     <ul class="footer__info-list">
-                        <li class="footer__info-item"><a class="footer__info-link" href="#">Contact Us</a></li>
+                        <li class="footer__info-item"><a class="footer__info-link" href="/pages/contact-us.html">Contact
+                                Us</a></li>
                         <li class="footer__info-item"><a class="footer__info-link" href="#">Sale Exclusions</a></li>
                         <li class="footer__info-item"><a class="footer__info-link" href="#">Shipping & Returns</a></li>
                         <li class="footer__info-item"><a class="footer__info-link" href="#">Terms & Conditions</a></li>
@@ -229,6 +242,9 @@
             </div>
             <div class="footer__lower-row">
                 <div class="footer__raiting-container">
+                    <div class="footer__text-wrapper">
+                        <p class="footer__text">Company Rating</p>
+                    </div>
                     <div class="footer__raiting">
                         <div class="footer__raiting-items">
                             <input class="footer__input" type="radio" name="rate" id="rate-5">
@@ -243,15 +259,53 @@
                             <label class="footer__label" for="rate-1"></label>
                         </div>
                     </div>
-                    <p class="footer__text test">Company Rating</p>
                 </div>
                 <div class="footer__copiright-container">
                     <p class="footer__text">Copyright © 2018 Dlk • Design Life Kids</p>
                 </div>
-                <a class="footer__design-link" href="#">Web Design — Direct Line Development</a>
+                <a class="footer__design-link" href="https://directlinedev.com/">Web Design — Direct Line
+                    Development</a>
             </div>
         </div>
     </footer>
+    <div class="modal" id="modal">
+        <div class="modal__body">
+            <div class="modal__content">
+                <a class="modal__close" href="#"></a>
+                <form class="section__form" action="#">
+                    <div class="section__container-name wrapper">
+                        <label class="section__label" for="Name">Name</label>
+                        <input class="section__input section__name" type="text" id="Name" placeholder="">
+                    </div>
+                    <div class="section__container-data wrapper">
+                        <div class="section__container-tel">
+                            <label class="section__label" for="Telephone">Phone</label>
+                            <input class="section__input section__telephone" type="tel" id="Telephone">
+                        </div>
+                        <div class="section__container-email">
+                            <label class="section__label" for="Email">Email</label>
+                            <input class="section__input section__email" type="text" id="Email">
+                        </div>
+                    </div>
+                    <div class="section__container-message wrapper">
+                        <label class="section__label" for="Message">Message</label>
+                        <input class="section__input section__message" type="text" id="Message">
+                    </div>
+                    <div class="section__container-description wrapper">
+                        <input class="section__input-checkbox" type="checkbox" id="checkbox">
+                        <span class="section__span"></span>
+                        <label class="section__label section__description-label" for="checkbox">By clicking on the
+                            button, you
+                            consent to the processing of
+                            your personal data</label>
+                    </div>
+                    <button class="section__btn" type="submit" disabled>Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/js/raitingmin.js"></script>
+    <script src="/js/modalmin.js"></script>
 </body>
 
 </html>
