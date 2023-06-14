@@ -1,13 +1,12 @@
 .filter {
-    max-width: 1180px;
-    width: 100%;
     display: flex;
+    justify-content: center;
     gap: 96px;
     margin: 50px auto;
     background-color: #7D97DA33;
-    background-size: 50%;
     padding: 42px 110px 45px;
     margin-top: 118px;
+    margin-left: -86px;
 }
 
 .filter__range {

@@ -95,9 +95,29 @@
     height: 50px;
 }
 
-.section__message {
-    height: 150px;
-    width: 600px;
+.section__textaria{
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    height: 140px;
+    width: 590px;
+    padding: 15px 20px 0;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    resize: none;
+    outline: none;
+}
+
+.section__textaria:hover{
+    border-color: #C29974;
+}
+
+.section__textaria:active{
+    border-color: #C29974;
+}
+
+.section__textaria:focus{
+    border-color: #C29974;
 }
 
 .section__name {
@@ -115,6 +135,8 @@
 
 .section__description {
     margin-top: 68px;
+    max-height: 540px;
+    overflow: auto;
 }
 
 .section__input-checkbox {

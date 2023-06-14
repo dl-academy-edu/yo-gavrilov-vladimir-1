@@ -141,6 +141,16 @@
     text-transform: uppercase;
 }
 
+.catalog__discription-owerflow{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 26px;
+    max-height: 184px;
+    overflow: auto;
+}
+
 .catalog__text {
     font-family: 'Open Sans', Arial, sans-serif;
     font-weight: 400;
@@ -152,14 +162,6 @@
 .catalog__textblock {
     max-width: 680px;
     margin: 56px auto 56px 17%;
-}
-
-.catalog__textblock p {
-    margin-top: 26px;
-}
-
-.catalog__textblock p:nth-child(3) {
-    margin-top: 15px;
 }
 
 .catalog__textblock p:nth-child(4) {
